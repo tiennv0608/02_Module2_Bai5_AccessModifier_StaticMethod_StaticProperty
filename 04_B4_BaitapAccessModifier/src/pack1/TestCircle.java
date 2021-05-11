@@ -1,6 +1,12 @@
-public class TestCircle {
+package pack1;
+
+class TestCircle extends Circle {
+    @Override
+    double getArea() {
+        return 0;
+    }
     public static void main(String[] args) {
-        Circle circle1 = new Circle();
+        TestCircle circle1 = new TestCircle();
         System.out.println("The radius is: " + circle1.getRadius());
         System.out.println("The Area is: " + circle1.getArea());
 
@@ -9,4 +15,5 @@ public class TestCircle {
         System.out.println("The Area is: " + circle2.getArea());
 
     }
+
 }
